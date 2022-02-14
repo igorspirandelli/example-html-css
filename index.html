@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LetMe Ask</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;900&family=Roboto&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      width: 100%;
+      height: 100%;
+    }
+
+    html, body, * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+
+      width: 100%;
+      height: 100%;
+    }
+
+    .container-left {
+      width: 40%;
+      height: 100%;
+      background-color: #835AFD;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      padding: 0 40px 80px;
+    }
+
+    .container-left h1 {
+      color: #FFFFFF;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    .container-left p {
+      color: #A8A8B3;
+      font-size: 24px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 400;
+    }
+
+    .container-right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      width: 60%;
+    }
+
+    .container-right .button-google {
+      width: 320px;
+      height: 50px;
+      border: none;
+      background-color: #EA4335;
+      color: #FFFFFF;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: filter 0.2s;
+      margin-bottom: 30px;
+    }
+
+    .container-right .button-google:hover {
+      filter: brightness(0.8);
+    }
+
+    .container-right p {
+      color: #A8A8B3;
+      font-size: 14px;
+      font-family: 'Roboto', sans-serif;
+      position: relative;
+      margin-bottom: 30px;
+    }
+
+    .container-right p::after {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 1px;
+      background-color: #A8A8B3;
+      top: 8px;
+      margin-left: 10px;
+    }
+
+    .container-right p::before {
+      content: '';
+      position: absolute;
+      width: 80px;
+      height: 1px;
+      background-color: #A8A8B3;
+      left: -90px;
+      top: 8px;
+    }
+
+    .container-right input {
+      width: 320px;
+      height: 50px;
+      border: 1px solid #A8A8B3;
+      border-radius: 8px;
+      font-family: 'Roboto', sans-serif;
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+
+    .container-right .button-login {
+      width: 320px;
+      height: 50px;
+      border: none;
+      background-color: #835AFD;
+      color: #FFFFFF;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: filter 0.2s;
+      margin-bottom: 30px;
+    }
+
+    .container-right .button-login:hover {
+      filter: brightness(0.8);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="container-left">
+      <h1>Toda pergunta tem uma resposta.</h1>
+      <p>
+        Aprenda e compartilhe conhecimento
+        com outras pessoas
+      </p>
+    </div>
+    <div class="container-right">
+      <div>
+        <img src="./images/logo.svg" alt="">
+      </div>
+      <button class="button-google">Cria sua sala com o Google</button>
+      <p>ou entre em uma sala</p>
+      <input type="text" placeholder="Digite o codigo da sala">
+      <button class="button-login">Entrar na sala</button>
+    </div>
+  </div>
+</body>
+</html>
